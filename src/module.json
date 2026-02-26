@@ -1,0 +1,120 @@
+{
+  "id": "usefulity",
+  "name": "Usefulity",
+  "abbrev": "UT",
+  "version": "0.1.0",
+  "description": "Stereo utility - channel select, width, bass mono, gain, pan, phase, mute, DC filter",
+  "author": "charlesvestal",
+  "license": "MIT",
+  "dsp": "usefulity.so",
+  "api_version": 2,
+  "capabilities": {
+    "chainable": true,
+    "component_type": "audio_fx",
+    "ui_hierarchy": {
+      "levels": {
+        "root": {
+          "name": "Usefulity",
+          "params": [
+            {
+              "key": "channel_mode",
+              "label": "Channel",
+              "type": "enum",
+              "options": ["Stereo", "Left", "Right", "Swap"],
+              "default": "Stereo"
+            },
+            {
+              "key": "width",
+              "label": "Width",
+              "type": "float",
+              "min": 0.0,
+              "max": 2.0,
+              "default": 1.0,
+              "step": 0.01,
+              "unit": "%"
+            },
+            {
+              "key": "mono",
+              "label": "Mono",
+              "type": "enum",
+              "options": ["Off", "On"],
+              "default": "Off"
+            },
+            {
+              "key": "bass_mono",
+              "label": "Bass Mono",
+              "type": "enum",
+              "options": ["Off", "On"],
+              "default": "Off"
+            },
+            {
+              "key": "bass_freq",
+              "label": "Bass Freq",
+              "type": "int",
+              "min": 50,
+              "max": 500,
+              "default": 120,
+              "step": 1,
+              "unit": "Hz"
+            },
+            {
+              "key": "gain_db",
+              "label": "Gain",
+              "type": "float",
+              "min": -100.0,
+              "max": 35.0,
+              "default": 0.0,
+              "step": 0.5,
+              "unit": "dB"
+            },
+            {
+              "key": "pan",
+              "label": "Balance",
+              "type": "float",
+              "min": -1.0,
+              "max": 1.0,
+              "default": 0.0,
+              "step": 0.01
+            },
+            {
+              "key": "mute",
+              "label": "Mute",
+              "type": "enum",
+              "options": ["Off", "On"],
+              "default": "Off"
+            },
+            {
+              "key": "phase_l",
+              "label": "Phase L",
+              "type": "enum",
+              "options": ["Normal", "Invert"],
+              "default": "Normal"
+            },
+            {
+              "key": "phase_r",
+              "label": "Phase R",
+              "type": "enum",
+              "options": ["Normal", "Invert"],
+              "default": "Normal"
+            },
+            {
+              "key": "dc_filter",
+              "label": "DC Filter",
+              "type": "enum",
+              "options": ["Off", "On"],
+              "default": "Off"
+            },
+            {
+              "key": "bass_audition",
+              "label": "Bass Audition",
+              "type": "enum",
+              "options": ["Off", "On"],
+              "default": "Off"
+            }
+          ],
+          "knobs": ["channel_mode", "width", "mono", "bass_mono", "bass_freq", "gain_db", "pan", "mute"]
+        }
+      }
+    }
+  }
+}
