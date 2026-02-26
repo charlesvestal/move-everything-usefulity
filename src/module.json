@@ -1,7 +1,7 @@
 {
   "id": "usefulity",
   "name": "Usefulity",
-  "abbrev": "UT",
+  "abbrev": "UF",
   "version": "0.1.0",
   "description": "Stereo utility - channel select, width, bass mono, gain, pan, phase, mute, DC filter",
   "author": "charlesvestal",
