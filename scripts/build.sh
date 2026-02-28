@@ -48,6 +48,7 @@ ${CROSS_PREFIX}gcc -Ofast -shared -fPIC \
 
 echo "Packaging..."
 cat src/module.json > dist/usefulity/module.json
+[ -f src/help.json ] && cat src/help.json > dist/usefulity/help.json
 cat build/usefulity.so > dist/usefulity/usefulity.so
 chmod +x dist/usefulity/usefulity.so
 

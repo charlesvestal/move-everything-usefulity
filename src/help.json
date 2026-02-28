@@ -1,0 +1,79 @@
+{
+  "title": "Usefulity",
+  "children": [
+    {
+      "title": "Overview",
+      "lines": [
+        "Stereo utility",
+        "effect.",
+        "",
+        "Channel select,",
+        "stereo width, bass",
+        "mono, gain, pan,",
+        "phase invert, mute,",
+        "and DC filter.",
+        "",
+        "Swiss army knife for",
+        "signal routing."
+      ]
+    },
+    {
+      "title": "Controls",
+      "children": [
+        {
+          "title": "Knob Mapping",
+          "lines": [
+            "Knob 1: Channel",
+            " Stereo, Left,",
+            " Right, or Swap",
+            "",
+            "Knob 2: Width",
+            " Stereo width (0-2x)",
+            " 0=mono 1=normal",
+            " 2=extra wide",
+            "",
+            "Knob 3: Mono",
+            " Collapse to mono",
+            "",
+            "Knob 4: Bass Mono",
+            " Mono below crossover"
+          ]
+        },
+        {
+          "title": "Gain & Pan",
+          "lines": [
+            "Knob 5: Bass Freq",
+            " Crossover (50-500Hz)",
+            "",
+            "Knob 6: Gain",
+            " -100 to +35 dB",
+            "",
+            "Knob 7: Balance",
+            " Pan L/R (-1 to +1)",
+            "",
+            "Knob 8: Mute",
+            " Kill switch"
+          ]
+        },
+        {
+          "title": "Advanced",
+          "lines": [
+            "Phase L: invert",
+            " left channel phase",
+            "",
+            "Phase R: invert",
+            " right channel phase",
+            "",
+            "DC Filter: remove",
+            " DC offset",
+            "",
+            "Bass Audition: solo",
+            " bass range only",
+            "",
+            "(all via menu)"
+          ]
+        }
+      ]
+    }
+  ]
+}
