@@ -2,7 +2,7 @@
   "id": "usefulity",
   "name": "Usefulity",
   "abbrev": "UF",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "Stereo utility - channel select, width, bass mono, gain, pan, phase, mute, DC filter",
   "author": "charlesvestal",
   "license": "MIT",
@@ -20,12 +20,7 @@
               "key": "channel_mode",
               "label": "Channel",
               "type": "enum",
-              "options": [
-                "Stereo",
-                "Left",
-                "Right",
-                "Swap"
-              ],
+              "options": ["Stereo", "Left", "Right", "Swap"],
               "default": "Stereo"
             },
             {
@@ -42,20 +37,14 @@
               "key": "mono",
               "label": "Mono",
               "type": "enum",
-              "options": [
-                "Off",
-                "On"
-              ],
+              "options": ["Off", "On"],
               "default": "Off"
             },
             {
               "key": "bass_mono",
               "label": "Bass Mono",
               "type": "enum",
-              "options": [
-                "Off",
-                "On"
-              ],
+              "options": ["Off", "On"],
               "default": "Off"
             },
             {
@@ -91,63 +80,39 @@
               "key": "mute",
               "label": "Mute",
               "type": "enum",
-              "options": [
-                "Off",
-                "On"
-              ],
+              "options": ["Off", "On"],
               "default": "Off"
             },
             {
               "key": "phase_l",
               "label": "Phase L",
               "type": "enum",
-              "options": [
-                "Normal",
-                "Invert"
-              ],
+              "options": ["Normal", "Invert"],
               "default": "Normal"
             },
             {
               "key": "phase_r",
               "label": "Phase R",
               "type": "enum",
-              "options": [
-                "Normal",
-                "Invert"
-              ],
+              "options": ["Normal", "Invert"],
               "default": "Normal"
             },
             {
               "key": "dc_filter",
               "label": "DC Filter",
               "type": "enum",
-              "options": [
-                "Off",
-                "On"
-              ],
+              "options": ["Off", "On"],
               "default": "Off"
             },
             {
               "key": "bass_audition",
               "label": "Bass Audition",
               "type": "enum",
-              "options": [
-                "Off",
-                "On"
-              ],
+              "options": ["Off", "On"],
               "default": "Off"
             }
           ],
-          "knobs": [
-            "channel_mode",
-            "width",
-            "mono",
-            "bass_mono",
-            "bass_freq",
-            "gain_db",
-            "pan",
-            "mute"
-          ]
+          "knobs": ["channel_mode", "width", "mono", "bass_mono", "bass_freq", "gain_db", "pan", "mute"]
         }
       }
     }
