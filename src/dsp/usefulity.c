@@ -93,10 +93,13 @@ static int json_get_number(const char *json, const char *key, float *out) {
 
 static int json_get_string(const char *json, const char *key, char *out, int out_len) {
     char search[64];
-    snprintf(search, sizeof(search), "\"%s\":\"", key);
+    snprintf(search, sizeof(search), "\"%s\":", key);
     const char *p = strstr(json, search);
     if (!p) return -1;
     p += strlen(search);
+    while (*p == ' ' || *p == '\t') p++;
+    if (*p != '"') return -1;
+    p++;
     int i = 0;
     while (*p && *p != '"' && i < out_len - 1) {
         out[i++] = *p++;
